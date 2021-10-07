@@ -3,6 +3,7 @@ console.log(items)
 
 const isInViewport = el => {
     const rect = el.getBoundingClientRect();
+    console.log(el.nextSibling)
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
@@ -14,6 +15,7 @@ const isInViewport = el => {
 
 const run = () =>
     items.forEach(item => {
+
         if (isInViewport(item)) {
             item.classList.add('show');
         }

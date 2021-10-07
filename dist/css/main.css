@@ -7189,7 +7189,8 @@ a.text-dark:hover, a.text-dark:focus {
 /* JOB-resume */
 /* Timeline */
 body {
-  color: black; }
+  color: black;
+  overflow-x: hidden; }
 
 #timeline ul {
   background: #fff;
@@ -7216,7 +7217,7 @@ body {
   background: #fff;
   border: 3px #BACC81 solid;
   border-radius: 10px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
   visibility: hidden;
   opacity: 1; }
 
@@ -7241,7 +7242,7 @@ body {
   background: inherit;
   transform: translateX(-50%);
   border-radius: 50%;
-  transition: background 0.5s ease-in-out; }
+  transition: background 0.4s ease-in-out; }
 
 /*  Arrows Base*/
 #timeline div:before {
@@ -7272,3 +7273,24 @@ body {
 
 #timeline ul li.show:after {
   background: #BACC81; }
+
+@media (max-width: 900px) {
+  #timeline ul li div {
+    width: 250px; }
+  #timeline ul li:nth-child(even) div {
+    left: -280px; } }
+
+@media (max-width: 600px) {
+  #timeline {
+    padding-bottom: 150px; }
+  #timeline ul li {
+    margin-left: 20px; }
+  /* Boxes are adapting to screen size */
+  #timeline ul li div {
+    width: calc(100vw - 90px); }
+  #timeline ul li:nth-child(even) div {
+    left: 40px; }
+  #timeline ul li:nth-child(even) div:before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #BACC81 transparent transparent; } }
