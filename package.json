@@ -1,0 +1,17 @@
+{
+    "name": "my_website2",
+    "version": "1.0.0",
+    "description": "My_website",
+    "main": "index.js",
+    "scripts": {
+        "sass": "node-sass  -w scss/ -o dist/css/ --recusrive"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^6.0.1"
+    },
+    "dependencies": {
+        "bootstrap": "^4.6.0"
+    }
+}
